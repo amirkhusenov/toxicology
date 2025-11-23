@@ -200,7 +200,7 @@ body {
 }
 
 .mobile-menu__link {
-    font-size: 35px;
+    font-size: 24px;
     color: white;
     text-decoration: none;
     font-weight: 400;
@@ -478,13 +478,12 @@ body {
 
     details[open] .language-selector__option {
         color: white;
-        font-size: 30px;
-        padding: 15px 20px;
+        font-size: 20px;
+        padding: 10px 20px;
     }
 
     details[open] .language-selector__option:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     .language-selector__list::-webkit-scrollbar {
