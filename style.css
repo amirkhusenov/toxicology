@@ -252,6 +252,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     max-height: 160px;
     overflow-y: auto;
+    overflow-x: hidden;
     z-index: 100;
 }
 
@@ -486,7 +487,7 @@ body {
     }
 
     details[open] .language-selector__option:hover {
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     .language-selector__list::-webkit-scrollbar {
