@@ -26,9 +26,9 @@
                     </button>
                 </div>
                 <nav class="nav">
-                    <div class="nav__logo">
+                    <a href="./index.html" class="nav__logo">
                         <img src="./img/logo.svg" alt="">
-                    </div>
+                    </a>
                     <div class="nav__menu">
                         <a href="./index.html" class="nav__button">Главная</a>
                         <a href="./faq.html" class="nav__button">F.A.Q</a>
@@ -57,20 +57,6 @@
                                 <div class="language-selector__option">RUS</div>
                                 <div class="language-selector__option">ENG</div>
                                 <div class="language-selector__option">CH</div>
-                                <div class="language-selector__option">DE</div>
-                                <div class="language-selector__option">RUS</div>
-                                <div class="language-selector__option">ENG</div>
-                                <div class="language-selector__option">CH</div>
-                                <div class="language-selector__option">DE</div>
-                                <div class="language-selector__option">RUS</div>
-                                <div class="language-selector__option">ENG</div>
-                                <div class="language-selector__option">CH</div>
-                                <div class="language-selector__option">DE</div>
-                                <div class="language-selector__option">RUS</div>
-                                <div class="language-selector__option">ENG</div>
-                                <div class="language-selector__option">CH</div>
-                                <div class="language-selector__option">DE</div>
-                                <div class="language-selector__option">RUS</div>
                             </div>
                         </div>
                     </details>
@@ -84,10 +70,26 @@
                     <form class="contact-form">
                         <div class="contact-form__section">
                             <div class="contact-form__field contact-form__field_select">
-                                <input type="text" class="contact-form__input" placeholder="Введите вашу страну"
-                                    id="country">
-                                <span class="language-selector__arrow-dropdown"></span>
-
+                                <details class="country-selector">
+                                    <summary class="country-selector__current">
+                                        Введите вашу страну
+                                        <span class="country-selector__arrow"></span>
+                                    </summary>
+                                    <div class="country-selector__dropdown">
+                                        <div class="country-selector__list">
+                                            <div class="country-selector__option">Россия</div>
+                                            <div class="country-selector__option">США</div>
+                                            <div class="country-selector__option">Германия</div>
+                                            <div class="country-selector__option">Франция</div>
+                                            <div class="country-selector__option">Великобритания</div>
+                                            <div class="country-selector__option">Италия</div>
+                                            <div class="country-selector__option">Испания</div>
+                                            <div class="country-selector__option">Китай</div>
+                                            <div class="country-selector__option">Япония</div>
+                                            <div class="country-selector__option">Канада</div>
+                                        </div>
+                                    </div>
+                                </details>
                             </div>
                             <div class="contact-form__field">
                                 <input type="text" class="contact-form__input" placeholder="Введите город" id="city">
@@ -160,7 +162,7 @@
         <nav class="mobile-menu__nav">
             <a href="./index.html" class="mobile-menu__link">Главная</a>
             <a href="./faq.html" class="mobile-menu__link">F.A.Q</a>
-            <a href="./contact.html" class="mobile-menu__link">Контакты</a>
+            <a href="./contact.html" class="mobile-menu__link">Связаться</a>
         </nav>
     </div>
 </body>
