@@ -469,11 +469,14 @@ body {
         flex-direction: column;
         max-height: none;
         box-shadow: none;
+        overflow: hidden;
     }
 
     .language-selector__list {
         flex: 1;
         padding-right: 10px;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     details[open] .language-selector__option {
@@ -483,7 +486,7 @@ body {
     }
 
     details[open] .language-selector__option:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     .language-selector__list::-webkit-scrollbar {
