@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Toxicology</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="page__background-image page__background-image_first"></div>
+            <div class="page__background-image page__background-image_second"></div>
+            <header class="header">
+                <div class="header__mobile-top">
+                    <button class="header__burger" id="burgerBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <nav class="nav">
+                    <div class="nav__logo">
+                        <img src="./img/logo.svg" alt="">
+                    </div>
+                    <div class="nav__menu">
+                        <a href="./index.html" class="nav__button">Главная</a>
+                        <a href="./faq.html" class="nav__button">F.A.Q</a>
+                        <a href="./contact.html" class="nav__button">Связаться</a>
+                    </div>
+                </nav>
+                <div class="header__bottom">
+                    <details class="language-selector" id="languageSelector">
+                        <summary class="language-selector__current">
+                            SELECT LANGUAGE
+                            <span class="language-selector__arrow"></span>
+                        </summary>
+                        <div class="language-selector__dropdown">
+                            <div class="language-selector__mobile-header">
+                                <span class="language-selector__title">Select Language:</span>
+                                <button class="language-selector__close" id="langCloseBtn" type="button">✕</button>
+                            </div>
+                            <div class="language-selector__list">
+                                <div class="language-selector__option">ENG</div>
+                                <div class="language-selector__option">CH</div>
+                                <div class="language-selector__option">DE</div>
+                                <div class="language-selector__option">RUS</div>
+                                <div class="language-selector__option">ENG</div>
+                                <div class="language-selector__option">CH</div>
+                                <div class="language-selector__option">DE</div>
+                                <div class="language-selector__option">RUS</div>
+                                <div class="language-selector__option">ENG</div>
+                                <div class="language-selector__option">CH</div>
+                                <div class="language-selector__option">DE</div>
+                                <div class="language-selector__option">RUS</div>
+                                <div class="language-selector__option">ENG</div>
+                                <div class="language-selector__option">CH</div>
+                                <div class="language-selector__option">DE</div>
+                                <div class="language-selector__option">RUS</div>
+                                <div class="language-selector__option">ENG</div>
+                                <div class="language-selector__option">CH</div>
+                                <div class="language-selector__option">DE</div>
+                                <div class="language-selector__option">RUS</div>
+                                <div class="language-selector__option">ENG</div>
+                                <div class="language-selector__option">CH</div>
+                                <div class="language-selector__option">DE</div>
+                                <div class="language-selector__option">RUS</div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="main__content">
+                    <h1 class="main__title">Связаться</h1>
+
+                    <form class="contact-form">
+                        <div class="contact-form__section">
+                            <div class="contact-form__field contact-form__field_select">
+                                <input type="text" class="contact-form__input" placeholder="Введите вашу страну"
+                                    id="country">
+                                <span class="language-selector__arrow-dropdown"></span>
+
+                            </div>
+                            <div class="contact-form__field">
+                                <input type="text" class="contact-form__input" placeholder="Введите город" id="city">
+                            </div>
+                            <div class="contact-form__field">
+                                <input type="text" class="contact-form__input" placeholder="Введите ваши ФИО"
+                                    id="fullname">
+                            </div>
+                            <div class="contact-form__field">
+                                <input type="text" class="contact-form__input" placeholder="Дата рождения"
+                                    id="birthdate">
+                            </div>
+                            <div class="contact-form__field contact-form__field_with-button">
+                                <input type="tel" class="contact-form__input" placeholder="Номер телефона" id="phone">
+                                <button type="button" class="contact-form__confirm-btn">Подтвердить</button>
+                            </div>
+                            <div class="contact-form__field contact-form__field_with-button">
+                                <input type="email" class="contact-form__input" placeholder="Введите ваш e-mail"
+                                    id="email">
+                                <button type="button" class="contact-form__confirm-btn">Подтвердить</button>
+                            </div>
+                        </div>
+
+                        <div class="contact-form__section">
+                            <textarea class="contact-form__textarea" placeholder="Комментарий" id="comment"></textarea>
+                        </div>
+
+                        <div class="contact-form__section">
+                            <label class="contact-form__label">Добавить файлы (только JPG)</label>
+                            <div class="contact-form__files">
+                                <div class="contact-form__file-preview">
+                                    <img src="./img/photo.svg" alt="" class="contact-form__file-icon">
+                                    <button type="button" class="contact-form__file-remove">✕</button>
+                                </div>
+                                <div class="contact-form__file-preview">
+                                    <img src="./img/photo.svg" alt="" class="contact-form__file-icon">
+                                    <button type="button" class="contact-form__file-remove">✕</button>
+                                </div>
+                                <div class="contact-form__file-preview">
+                                    <img src="./img/photo.svg" alt="" class="contact-form__file-icon">
+                                    <button type="button" class="contact-form__file-remove">✕</button>
+                                </div>
+                                <label class="contact-form__file-add">
+                                    <input type="file" class="contact-form__file-input" accept="image/jpeg,.jpg"
+                                        multiple>
+                                    <div class="contact-form__file-add-content">
+                                        <span class="contact-form__file-add-text">Добавить файл *.jpg</span>
+                                        <img src="./img/+.svg" alt="" class="contact-form__file-add-icon">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="contact-form__submit">Отправить</button>
+                    </form>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__copyright">Copyright 2025</div>
+            </footer>
+        </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__header">
+            <div class="nav__logo mobile-menu__logo">
+                <img src="./img/logo.svg" alt="TOXICOLOGY" class="nav__logo-image">
+            </div>
+            <button class="mobile-menu__close" id="closeBtn">✕</button>
+        </div>
+        <nav class="mobile-menu__nav">
+            <a href="./index.html" class="mobile-menu__link">Главная</a>
+            <a href="./faq.html" class="mobile-menu__link">F.A.Q</a>
+            <a href="./contact.html" class="mobile-menu__link">Контакты</a>
+        </nav>
+    </div>
+</body>
+
+</html>
